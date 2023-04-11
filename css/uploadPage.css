@@ -90,8 +90,8 @@ body {
 	opacity: 1;
 }
 .upload-image {
-	display: block;
-	width: 50%;
+	display: inline;
+	width: 40%;
 	padding: 16px 0;
 	border-radius: 15px;
     margin: 0 auto;
@@ -102,12 +102,32 @@ body {
 	border: none;
 	cursor: pointer;
 	transition: all .2s ease;
+	margin-left: 8%;
 }
 .upload-image:hover {
 	background: var(--dark-blue);
 }
 
 .clear-image {
+	display: inline;
+	width: 40%;
+	padding: 16px 0;
+	border-radius: 15px;
+    margin: 0 auto;
+	background: var(--blue);
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: all .2s ease;
+	margin-left: 30px;
+}
+.clear-image:hover {
+	background: var(--dark-blue);
+}
+
+.submit-btn {
 	display: block;
 	width: 50%;
 	padding: 16px 0;
@@ -122,6 +142,6 @@ body {
 	transition: all .2s ease;
     margin-top: 30px;
 }
-.clear-image:hover {
+.submit-btn:hover {
 	background: var(--dark-blue);
 }
