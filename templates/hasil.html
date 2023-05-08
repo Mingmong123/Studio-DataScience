@@ -6,19 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
-    <p>Detected: {{predicted}}</p>
-    <img src="data:image/jpeg;base64,{{ image }}" alt="image">
-    <table>
-        <tr>
-            <th>Disclaimer / Warning</th>
-        </tr>
-        <tr>
-            <td>
-                <p>This app is a proof-of-concept and known to produce inaccurate results. Intended for educational and testing use only. Do not use this app in a real-world medical environment. Use at your own risk. </p>
-            </td>
-        </tr>
-    </table>
+<body> 
+    <center><p>Detected: {{predicted}}</p></center>
+    <center><img src="data:image/jpeg;base64,{{ image }}" alt="image"></center>
+    <div class="keterangan" style="text-align: center;">
+    <p><strong>Disclaimer / Warning</strong></p>
+    <p>This app is a proof-of-concept and known to produce inaccurate results. Intended for educational and testing use only. Do not use this app in a real-world medical environment. Use at your own risk. </p>
+    </div>
 </body>
 </html>

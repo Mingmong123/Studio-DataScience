@@ -1,93 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
-body{
-    margin: 0px;
-    padding : 0px;
-    font-family : 'Inter';
+:root {
+	--blue: #0071FF;
+	--light-blue: #B6DBF6;
+	--dark-blue: #005DD1;
+	--grey: #f2f2f2;
 }
 
-.container{
-    width : 1100px;
-    margin : auto;
-    position: relative;
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
-.menu{
-    justify-content: center;
-    display: flex;
-}
 
-.logo{
-    float: left;
-    font-family: sans-serif;
+.container {
+	max-width: 840px;
+	width: 100%;
+	background: #fff;
+	padding: 30px;
+	border-radius: 30px;
 }
-
-nav {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    line-height: 80px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    background: white;
-    z-index: 1;
+.img-area {
+	position: relative;
+	width: 100%;
+	height: 440px;
+    width: 775px;
+    border: 2px solid #ddd;
+	margin-bottom: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
-
-nav ul{
-    align-items: center;
-    display: flex;
+.img-area .icon {
+	font-size: 100px;
 }
-
-nav ul li {
-    list-style: none;
-    float : left;
-    margin-left: 30px;
+.img-area h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 6px;
 }
-
-nav ul li a{
-    text-align: "Inter";
-    padding: 0px 16px 0px 16px;
-    text-decoration: none;
-    font-family: sans-serif;
+.img-area p {
+	color: #999;
 }
-
-.wrapper{
-    background-color: orange;
-    margin: auto;
-    display: flex;
+.img-area p span {
+	font-weight: 600;
 }
-
-.stated .tbl-blue{
-    font-size: large;
-    font-family: sans-serif;
+.img-area img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: 100;
 }
-
-.opening{
-    margin-top: 40px;
-    margin-bottom: 40px;
+.img-area::before {
+	content: attr(data-img);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: all .3s ease;
+	z-index: 200;
 }
-
-.wrapper .introduce .opening h1{
-    font-size: 40px;
-    font-family: sans-serif;
+.img-area.active:hover::before {
+	opacity: 1;
 }
-
-.wrapper .introduce .opening p{
-    font-size: large;
-    font-family: sans-serif;
+form {
+	display: block;
+	width: 50%;
+	padding: 16px 0;
+	border-radius: 15px;
+    margin: 0 auto;
+	background: var(--blue);
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: all .2s ease;
 }
-
-.keterangan .aboutus h1{
-    font-size: 40px;
-    font-family: sans-serif;
-}
-
-.keterangan .aboutus p{
-    font-size: large;
-    font-family: sans-serif;
+form:hover {
+	background: var(--dark-blue);
 }
