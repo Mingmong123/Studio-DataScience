@@ -3,5 +3,6 @@
 - Model trained from this dataset: 
   - https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
   - https://www.kaggle.com/datasets/artyomkolas/3-kinds-of-pneumonia
+ - Further training and adjustment of the model (i.e. with hyperparameter tuning, model adjustment, etc.) may strongly be required.
 - **NOTE** put disclaimer in site: 
   - EN: This app is a proof-of-concept and known to produce inaccurate results. Intended for educational and testing use only. Do not use this app in a real-world medical environment. Use at your own risk.
